@@ -223,9 +223,13 @@
   background: #01000c; /* or your navbar background color */
   padding: 12px 0;
 }
-
-body {
-  margin-top: 90px; /* adjust based on navbar height */
+    section {
+  min-height: 100vh;        /* each section fills at least full screen */
+  scroll-margin-top: 0px;   /* no manual offset needed */
+  padding: 60px 20px;       /* optional, inner spacing for content */
+}
+    html {
+  scroll-behavior: smooth;
 }
 
     .proj .meta{padding:12px}
